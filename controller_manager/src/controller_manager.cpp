@@ -671,7 +671,7 @@ void ControllerManager::list_controller_types_srv_cb(
   for (const auto & cur_type : cur_types) {
     response->types.push_back(cur_type);
     response->base_classes.push_back(kControllerInterface);
-    RCLCPP_INFO(get_logger(), cur_type);
+    // RCLCPP_INFO(get_logger(), cur_type);
   }
 
   RCLCPP_DEBUG(get_logger(), "list types service finished");

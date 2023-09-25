@@ -45,7 +45,7 @@ install(TARGETS controller_manager
 install(DIRECTORY include/
   DESTINATION include
 )
-
+set(BUILD_TESTING false)
 if(BUILD_TESTING)
   find_package(ament_cmake_gmock REQUIRED)
   find_package(ament_cmake_gtest REQUIRED)

@@ -105,7 +105,7 @@ public:
     const std::vector<std::string> & stop_controllers,
     int strictness,
     bool start_asap = WAIT_FOR_ALL_RESOURCES,
-    const rclcpp::Duration & timeout = rclcpp::Duration(INFINITE_TIMEOUT));
+    const rclcpp::Duration & timeout = rclcpp::Duration(0, INFINITE_TIMEOUT));
 
   CONTROLLER_MANAGER_PUBLIC
   controller_interface::return_type
